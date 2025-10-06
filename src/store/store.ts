@@ -46,8 +46,7 @@ const useHabit = create<HabitStatesStore>()(
     ),
   })
       
-  }),{ name: "habit-tracker-store"
-   }))
+  })))
 );
 
 export default useHabit;
