@@ -11,10 +11,7 @@ export interface HabitStates {
 
 export interface HabitStatesStore {
   habits: HabitStates[];
-  addHabit: (
-    name: string,
-    frequency: "daily" | "weekly" | "monthly"
-  ) => void;
+  addHabit: (name: string, frequency: "daily" | "weekly" | "monthly") => void;
   removeHabit: (id: number) => void;
   toggleHabitCompletion: (id: number, date: string) => void;
   isLoading: boolean;
