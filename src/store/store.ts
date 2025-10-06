@@ -23,7 +23,7 @@ export interface HabitStatesStore {
 }
 
 const useHabit = create<HabitStatesStore>()(
-  devtools(persist((set) => ({
+  ((set) => ({
     habits: [],
     isLoading: false,
     error: null,
@@ -44,7 +44,7 @@ const useHabit = create<HabitStatesStore>()(
           }
         : habit
     ),
-  }))
+  })
       
   }),{ name: "habit-tracker-store"
    }))
