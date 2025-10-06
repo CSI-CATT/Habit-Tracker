@@ -1,13 +1,7 @@
 import { create } from "zustand";
 import {devtools, persist } from "zustand/middleware";
 
-export interface HabitStates {
-  id: number;
-  name: string;
-  frequency: "daily" | "weekly" | "monthly";
-  completedDate: string[];
-  createdAt: string;
-}
+// Add and export interface here
 
 export interface HabitStatesStore {
   habits: HabitStates[];
